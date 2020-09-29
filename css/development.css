@@ -1,0 +1,265 @@
+/*hero section*/ 
+.hero-section{ 
+    background-image: url("../images/development-page.jpg");
+    padding: 35vh 0;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    -webkit-transform:translatez(0);
+
+}
+.hero-container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%; 
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.background-overlay{ 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0;
+    right: 0; 
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+/*commitment*/ 
+.commitment-container{ 
+    width: 90%; 
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 100px 0;
+  }
+
+/*end-tp-end-solution*/ 
+
+.our-approach-container{ 
+    width: 90%; 
+    max-width: 1100px; 
+    margin: 0 auto;
+}
+.approach-flex-container{ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.approach-flex-container>div{ 
+    width: 45%;
+}
+.polygon-container{ 
+    width: 300px;
+    margin: 0 0 30px 0;
+}
+.polygon-shadow{
+    filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.5));
+}
+.first-polygon{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 auto;
+    width: 220px; 
+    height: 250px; 
+    background-color: white;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.first-polygon img{ 
+    display: block;
+    margin: 0 auto;
+}
+.first-polygon h5{ 
+    font-size: 30px !important;
+}
+.second-polygon{ 
+    z-index: -1;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    transform: translate(0%,0);
+    margin: 0 0 0 auto;
+    width: 190px; 
+    height: 220px; 
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+/*innovation-technology*/ 
+.innovation-section>p{ 
+    width: 90%; 
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.innovation-container{ 
+    width:90%; 
+    max-width: 1100px; 
+    margin: 0 auto;
+}
+.innovation-container>div:nth-child(1){ 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px auto;
+}
+.innovation-container>div:nth-child(2){ 
+    display: flex; 
+    flex-direction: row-reverse; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-container>div:nth-child(1){ 
+    width:60%;
+}
+.flex-container>div:nth-child(2){ 
+    width: 40%;
+}
+.flex-container img{ 
+    width: 100%; 
+    height: auto;
+ 
+}
+/*three ways to invest*/ 
+
+.three-ways-container{ 
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto; 
+}
+.card-flex{ 
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card-flex>div{ 
+    padding: 0 0 10px 0;
+    margin: 20px 20px;
+    width: 310px;
+    height: 570px;
+    border-radius: 10px;
+  box-shadow: 7px 7px 10px 1px rgba(0,0,0,0.16);
+}
+.card-flex img{ 
+    display: block;
+    margin: 0 0 10px 0;
+    width:310px; 
+    height: 250px;
+    border-radius: 10px;
+}
+.card-flex p{ 
+    padding:0 10px;
+}
+
+@media only screen and (max-width: 800px){
+    .approach-flex-container{ 
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        margin: 50px 0;
+    }
+    .approach-flex-container>div{ 
+        width: 100%;
+    }
+    .first-polygon{ 
+        margin: 0 auto;
+    }
+    .second-polygon{ 
+        top: 50px;
+        right: 50%;
+        transform: translate(50%,0);
+        margin: 0  auto;
+    }
+    /*global-demand*/ 
+    .about-flex{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .image-container{ 
+       width:100%;
+       
+    }
+    .image-container img{ 
+      display: block;
+      margin: 0 auto;
+        width:100%;
+        height: 200px;
+        border-radius: 10px;
+    }
+    
+    .about-text{ 
+        position: static;
+        width: 100%;
+    }
+    .about-text object{ 
+        margin: 10px 50px 10px 0;
+    }
+
+    /*our team*/ 
+    .our-team-section{ 
+        margin: 0 0 0 0; 
+    }
+
+    /*innovation-technology*/ 
+
+.innovation-container>div:nth-child(1){ 
+    flex-direction: column; 
+    margin: 100px auto;
+}
+.innovation-container>div:nth-child(2){ 
+    flex-direction: column; 
+}
+.flex-container>div:nth-child(1){ 
+    width:100%;
+}
+.flex-container>div:nth-child(2){ 
+    width: 100%;
+}
+.flex-container img{ 
+    width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+
+}
+@media only screen and (max-width: 600px){
+    
+    
+    .hero-section{ 
+        background-image: none;
+        background-color:  #586E08;
+        padding: 25vh 0;
+        background-attachment: fixed;
+    }
+    .hero-container{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%; 
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .background-overlay{ 
+        background-color: rgba(0,0,0,0);
+    }
+  
+}

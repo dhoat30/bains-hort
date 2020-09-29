@@ -1,0 +1,113 @@
+@media only screen and (max-width: 1100px){
+    .navbar-background{ 
+        display: none;
+    }
+    .mobile-navbar{ 
+       display: flex;
+    }
+   
+    .fullscreen-video-wrap video{ 
+        display: none;
+    }
+    .header-overlay{
+        opacity:0;
+      }
+    .v-container{
+        background-color: #586E08;
+        padding:100px 0;
+    }
+}
+@media only screen and (max-width: 850px){
+    .investment,.development,.nursery{ 
+        flex-wrap: wrap-reverse !important;
+        justify-content:center;
+        align-items: center;
+        height: auto;
+        margin: 0 auto 50px auto;
+    }
+    .investment>div{ 
+        width:100%;
+        margin: 0 auto 0 auto;
+    }
+    .nursery>div{ 
+        width:100%;
+        margin: 0 auto 0 auto;
+    }
+    .development>div{ 
+        width:100%;
+        margin: 0 auto 0 auto;
+    }
+    .graphic-content img{ 
+        border-radius: 50%;
+        width: 270px; 
+        height: 270px;
+        display: block;
+        margin: 5px auto;
+        border: 10px solid #FFC239;
+    }
+   
+}
+
+@media only screen and (max-width: 600px){
+  .v-header{
+    height:50vh;
+  }
+  /*global text style */ 
+.hero-section-heading{ 
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 3px;
+  }
+  .section-heading{ 
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .section-subheading{ 
+    font-size: 25px; 
+    font-weight: 700;
+  }
+  .underline{ 
+    width: 150px;
+    height: 10px;
+    background-color: #586E08;
+    margin: -5px auto 15px auto;
+  }
+  .technology-background{ 
+    background-image: url('images/technology-background.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+    background-attachment: scroll;
+    padding: 100px 0 100px 0;
+  }
+  .technology-background-img{ 
+    position: relative;
+  }
+  .technology-gradient{
+    display: none;
+  }
+  .light{ 
+    font-weight: 400;
+  }
+
+}
+
+@media only screen and (max-width: 1150px){
+    .solution-container img{ 
+        clip-path: polygon(100% 75%, 50% 100%, 0 75%, 0 0, 50% 25%, 100% 0);
+        width:170px; 
+        height: 170px;
+      } 
+      .solution-container{ 
+        display:flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .solution-container>div{ 
+          margin: 10px 0;
+         text-align: center;
+      }
+}
+

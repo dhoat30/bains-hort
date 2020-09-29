@@ -1,0 +1,3 @@
+Sitemap: https://www.bainshorticulture.co.nz/sitemap.xml
+User-agent:*
+Disallow:

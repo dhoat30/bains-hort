@@ -1,0 +1,159 @@
+/*hero section*/ 
+.hero-section{ 
+    background-image: url("../images/nursery-hero.jpg");
+    padding: 35vh 0;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-transform:translatez(0);
+
+
+}
+.hero-container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%; 
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.background-overlay{ 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0;
+    right: 0; 
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+
+/*triple approach*/ 
+
+.our-approach-container{ 
+    width: 90%; 
+    max-width: 1100px; 
+    margin: 100px auto;
+}
+.our-approach-container>div:nth-child(1){ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.our-approach-container>div:nth-child(2){ 
+    display: flex; 
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.our-approach-container>div:nth-child(3){ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.approach-flex-container>div{ 
+    width: 45%;
+}
+.polygon-container{ 
+    width: 300px;
+    margin: 0 0 30px 0;
+}
+.polygon-shadow{
+    filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.5));
+}
+.first-polygon1{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    width: 300px;
+    height: 340px; 
+    background-color: white;
+    background-image: url('../images/nursery-hero.jpg');
+    background-position: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.second-polygon{ 
+    z-index: -1;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    margin: 0 auto 0 auto;
+    width: 270px; 
+    height: 320px; 
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.first-polygon2{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    width: 300px;
+    height: 340px; 
+    background-color: white;
+    background-image: url('../images/nursery-hero.jpg');
+    background-position: right;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.first-polygon3{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    width: 300px;
+    height: 340px; 
+    background-color: white;
+    background-image: url('../images/nursery-hero.jpg');
+    background-position: left;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+@media only screen and (max-width: 800px){
+    .our-approach-container>div:nth-child(1){ 
+        flex-direction: column-reverse;
+    }
+    .our-approach-container>div:nth-child(2){ 
+        flex-direction: column-reverse;
+    }
+    .our-approach-container>div:nth-child(3){ 
+        flex-direction: column-reverse;
+    }
+    .approach-flex-container>div{ 
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px){
+    
+    
+    .hero-section{ 
+        background-image: none;
+        background-color:  #586E08;
+        padding: 25vh 0;
+        background-attachment: fixed;
+    }
+    .hero-container{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%; 
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .background-overlay{ 
+        background-color: rgba(0,0,0,0);
+    }
+  
+}

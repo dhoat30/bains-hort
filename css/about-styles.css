@@ -1,0 +1,230 @@
+/*hero section*/ 
+.hero-section{ 
+    background-image: url("../images/investment-hero-section.jpg");
+    padding: 35vh 0;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-transform:translatez(0);
+}
+.hero-container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%; 
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.background-overlay{ 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0;
+    right: 0; 
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+
+/*triple approach*/ 
+
+.our-approach-container{ 
+    width: 90%; 
+    max-width: 1100px; 
+    margin: 0 auto;
+}
+.approach-flex-container{ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.approach-flex-container>div{ 
+    width: 45%;
+}
+.polygon-container{ 
+    width: 300px;
+    margin: 0 0 30px 0;
+}
+.polygon-shadow{
+    filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.5));
+}
+.first-polygon{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 auto;
+    width: 220px; 
+    height: 250px; 
+    background-color: white;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.first-polygon img{ 
+    display: block;
+    margin: 0 auto;
+}
+.first-polygon h5{ 
+    font-size: 30px !important;
+}
+.second-polygon{ 
+    z-index: -1;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    transform: translate(0%,0);
+    margin: 0 0 0 auto;
+    width: 190px; 
+    height: 220px; 
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+/*about-us*/ 
+/*global demand*/ 
+.about-container{ 
+    margin: 50px 0;
+    width: 90%; 
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.about-flex{ 
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+.image-container{ 
+   width:700px;
+}
+.image-container img{ 
+    width:700px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.about-text{ 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px 1px rgba(0,0,0,0.16); 
+    padding: 50px 20px;
+    position: absolute;
+    width: 600px;
+    right: 0;
+    top: 70%;
+}
+.about-text object{ 
+    width: 70px; 
+    height: auto;
+    display: inline-block;
+    margin: 10px 70px 10px 0;
+}
+
+/*our team*/ 
+.our-team-section{ 
+    margin: 200px 0 0 0; 
+}
+.our-team-container{ 
+    width: 90%; 
+    max-width: 1100px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+.our-team-container>div{ 
+    margin: 40px 40px;
+}
+.our-team-container img{ 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; 
+    border: 10px solid #FFC239;
+}
+.our-team-container h5{
+    font-size:25px;
+    margin:10px 0 0px 0;
+}
+
+@media only screen and (max-width: 800px){
+    .approach-flex-container{ 
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        margin: 50px 0;
+    }
+    .approach-flex-container>div{ 
+        width: 100%;
+    }
+    .first-polygon{ 
+        margin: 0 auto;
+    }
+    .second-polygon{ 
+        top: 50px;
+        right: 50%;
+        transform: translate(50%,0);
+        margin: 0  auto;
+    }
+    /*global-demand*/ 
+    .about-flex{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .image-container{ 
+       width:100%;
+       
+    }
+    .image-container img{ 
+      display: block;
+      margin: 0 auto;
+        width:100%;
+        height: 200px;
+        border-radius: 10px;
+    }
+    
+    .about-text{ 
+        position: static;
+        width: 100%;
+    }
+    .about-text object{ 
+        margin: 10px 50px 10px 0;
+    }
+
+    /*our team*/ 
+    .our-team-section{ 
+        margin: 0 0 0 0; 
+    }
+
+}
+@media only screen and (max-width: 600px){
+    
+    
+    .hero-section{ 
+        background-image: none;
+        background-color:  #586E08;
+        padding: 25vh 0;
+    }
+    .hero-container{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%; 
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .background-overlay{ 
+        background-color: rgba(0,0,0,0);
+    }
+  
+}

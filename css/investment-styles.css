@@ -1,0 +1,320 @@
+.hero-section{ 
+    background-image: url("../images/investment-hero-section.jpg");
+    padding: 35vh 0;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.hero-container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%; 
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.background-overlay{ 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0;
+    right: 0; 
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+.hero-section-heading{ 
+    background-image: url('images');
+}
+
+/*diverse-portfolio----*/
+.diverse-portfolio-container{ 
+  width: 90%; 
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/*three ways to invest*/ 
+
+.three-ways-container{ 
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto; 
+}
+.card-flex{ 
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card-flex>div{ 
+    padding: 0 0 10px 0;
+    margin: 20px 20px;
+    width: 310px;
+    height: 570px;
+    border-radius: 10px;
+  box-shadow: 7px 7px 10px 1px rgba(0,0,0,0.16);
+}
+.card-flex img{ 
+    display: block;
+    margin: 0 0 10px 0;
+    width:310px; 
+    height: 250px;
+    border-radius: 10px;
+}
+.card-flex p{ 
+    padding:0 10px;
+}
+
+/*global demand*/ 
+.global-demand-container{ 
+    margin: 50px 0;
+    width: 90%; 
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.global-demand-flex{ 
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+.image-container{ 
+   width:700px;
+}
+.image-container img{ 
+    width:700px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.global-demand-text{ 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px 1px rgba(0,0,0,0.16); 
+    padding: 50px 20px;
+    position: absolute;
+    width: 600px;
+    right: 0;
+    top: 70%;
+}
+.global-demand-text object{ 
+    width: 70px; 
+    height: auto;
+    display: inline-block;
+    margin: 10px 70px 10px 0;
+}
+
+/*promise section*/ 
+.promise-container{ 
+    margin-top: 200px;
+    width: 100%;
+    padding: 0; 
+     
+}
+
+/*role*/
+.role-section{ 
+    padding: 1px 0;
+   
+}
+.role-container{ 
+    width: 90%; 
+    max-width: 1100px;
+    margin: 100px auto;
+}
+.role-container .large-image{ 
+    width:100%; 
+    height: 650px;
+    display: block;
+    margin: 0 auto; 
+    object-fit: cover;
+}
+.role-container .small-image{ 
+    width:450px; 
+    height: 300px;
+    display: block;
+    margin: 0 auto; 
+    object-fit: cover;
+    border: 10px solid #FFC239; 
+}
+.role-grid{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, 40px);
+}
+.role-grid div:nth-child(1){ 
+    grid-column: 1/6;
+    grid-row: 1/15;
+}
+.role-grid div:nth-child(2){ 
+    grid-column: 7/13;
+    grid-row: 1/17;
+}
+.role-grid div:nth-child(3){ 
+    grid-column: 5/10;
+    grid-row: 15/21;
+}
+
+/*end to end solution*/ 
+
+.end-to-end-solution{ 
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-content: flex-start;
+  
+}
+.solution-text{ 
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.solution-container-investment{ 
+    width: 30%;
+}
+.solution-container-investment img{ 
+    clip-path: polygon(100% 75%, 50% 100%, 0 75%, 0 0, 50% 25%, 100% 0);
+    width:170px; 
+    height: 170px;
+  } 
+  .solution-container-investment{ 
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .solution-container-investment>div{ 
+      margin: 10px 0;
+     text-align: center;
+  }
+
+@media only screen and (max-width: 750px){
+/*global-demand*/ 
+  .global-demand-flex{ 
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  .image-container{ 
+     width:100%;
+     
+  }
+  .image-container img{ 
+    display: block;
+    margin: 0 auto;
+      width:100%;
+      height: 200px;
+      border-radius: 10px;
+  }
+  
+  .global-demand-text{ 
+      position: static;
+      width: 100%;
+  }
+  .global-demand-text object{ 
+      margin: 10px 50px 10px 0;
+  }
+
+/*promise-container*/ 
+  .promise-container{ 
+    margin-top: 0px;
+    width: 100%;
+}
+/*role*/
+.role-container{ 
+    width: 90%; 
+    max-width: 1100px;
+    margin: 100px auto;
+}
+.role-container .large-image{ 
+    width: 300px;; 
+    height: 300px;
+    display: block;
+    margin: 0 auto; 
+    object-fit: cover;
+    border-radius: 50%;
+    border: 10px solid #FFC239; 
+}
+.role-grid{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.role-grid div:nth-child(1){ 
+    margin-top: 10px;
+ }
+ 
+.role-grid div:nth-child(3){ 
+   display: none; 
+}
+/*end to end solution*/ 
+.end-to-end-solution{ 
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+.solution-text{ 
+    width: 100%;
+}
+.solution-container-investment{ 
+    width: 100%;
+}
+}
+
+@media only screen and (max-width: 600px){
+    .navbar-background{ 
+        display: none;
+    }
+    .mobile-navbar{ 
+       display: flex;
+    }
+   
+    .fullscreen-video-wrap video{ 
+        display: none;
+    }
+    .header-overlay{
+        opacity:0;
+      }
+    .v-container{
+        background-color: #586E08;
+        padding:100px 0;
+    }
+    
+    .hero-section{ 
+        background-image: none;
+        background-color:  #586E08;
+        padding: 25vh 0;
+    }
+    .hero-container{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%; 
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .background-overlay{ 
+        background-color: rgba(0,0,0,0);
+    }
+  
+}
